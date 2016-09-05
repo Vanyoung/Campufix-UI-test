@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title></title>
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="weui-master/dist/style/weui.min.css"/>
+	<!-- CSS Files -->
+</head>
+<body>
+<!-- JavaScript Files-->
+ <script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+<!-- JavaScript Files -->
+
+<!-- RadioStart -->
+<div class="weui_cells_title">性别</div>
+<div class="weui_cells weui_cells_radio">
+  	<label class="weui_cell weui_check_label" for="x11">
+    	<div class="weui_cell_bd weui_cell_primary">
+      		<p>男</p>
+   		 </div>
+    	<div class="weui_cell_ft">
+     		<input type="radio" class="weui_check" name="radio1" id="x11">
+      		<span class="weui_icon_checked"></span>
+    	</div>
+  	</label>
+ 	<label class="weui_cell weui_check_label" for="x12">
+   		<div class="weui_cell_bd weui_cell_primary">
+      		<p>女</p>
+    	</div>
+    	<div class="weui_cell_ft">
+      		<input type="radio" name="radio1" class="weui_check" id="x12">
+      		<span class="weui_icon_checked"></span>
+    	</div>
+  	</label>
+  	<label class="weui_cell weui_check_label" for="x13">
+  		<div class="weui_cell_bd weui_cell_primary">
+  			<p>未知</p>
+		</div>
+		<div class="weui_cell_ft">
+			<input type="radio" name="radio1" class="weui_check" id="x13">
+			<span class="weui_icon_checked"></span>
+		</div>
+ 	</label>
+</div>
+<!-- RadioEnd -->
+
+<!-- CheckboxStart -->
+<div class="weui_cells_title">兴趣爱好</div>
+<div class="weui_cells weui_cells_checkbox">
+	<label class="weui_cell weui_check_label" for="s11">
+		<div class="weui_cell_hd">
+			<input type="checkbox" class="weui_check" name="checkbox1" id="s11" checked="checked">
+			<i class="weui_icon_checked"></i>
+		</div>
+		<div class="weui_cell_bd weui_cell_primary">
+			<p>写代码</p>
+		</div>
+	</label>
+	<label class="weui_cell weui_check_label" for="s12">
+		<div class="weui_cell_hd">
+			<input type="checkbox" class="weui_check" name="checkbox1" id="s12">
+			<i class="weui_icon_checked"></i>
+		</div>
+		<div class="weui_cell_bd weui_cell_primary">
+			<p>修bug</p>
+		</div>
+	</label>
+	<label class="weui_cell weui_check_label" for="s13">
+		<div class="weui_cell_hd">
+			<input type="checkbox" class="weui_check" name="checkbox1" id="s13">
+			<i class="weui_icon_checked"></i>
+		</div>
+		<div class="weui_cell_bd weui_cell_primary">
+			<p>修别人的bug</p>
+		</div>
+	</label>
+</div>
+<!-- CheckboxEnd -->
+
+<!-- SwitchStart -->
+<div class="weui_cells_title">其他</div>
+<div class="weui_cells weui_cells_form">
+	<div class="weui_cell weui_cell_switch">
+		<div id="wedinfo" class="weui_cell_hd weui_cell_primary">
+			<p class="yes">已婚</p>
+			<p class="no">未婚</p>
+		</div>
+		<div class="weui_cell_ft">
+			<input id="swi_check" class="weui_switch" type="checkbox" checked />
+		</div>
+	</div>
+</div>
+<!-- SwitchEnd -->
+
+<!-- Button -->
+<a href="javascript:;" id="sub_btn" class="weui_btn weui_btn_primary" style="margin: 20px 5%;">确定</a>
+<!-- Button -->
+
+<div id="loadingToast" class="weui_loading_toast" style="display:none;">
+    <div class="weui_mask_transparent"></div>
+    <div class="weui_toast">
+        <div class="weui_loading">
+            <div class="weui_loading_leaf weui_loading_leaf_0"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_1"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_2"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_3"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_4"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_5"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_6"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_7"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_8"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_9"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_10"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_11"></div>
+        </div>
+        <p class="weui_toast_content">数据加载中</p>
+    </div>
+</div>
+
+<!-- jQuery -->
+<!-- Switch_Checkbox -->
+<script type="text/javascript">
+	$(function(){
+		$(".no").hide();
+		$("#swi_check").click(function(){
+			$('.no').toggle();
+			$('.yes').toggle();
+		})
+	})
+</script>
+<!-- Switch_Checkbox -->
+<!-- Show_Loading -->
+<script type="text/javascript">
+	$(function(){
+		$("#sub_btn").click(function(){
+			$('#loadingToast').show();
+			window.location.href="successmsg.html"
+		})
+	})
+
+</script>
+<!-- Show_Loading -->
+<!-- jQuery -->
+<!-- JavaScript Files-->
+
+<!-- JavaScript Files-->
+</body>
+</html>
