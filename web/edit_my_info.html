@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>编辑信息</title>
+	<link rel="stylesheet" href="http://cdn.bootcss.com/weui/0.4.3/style/weui.min.css">
+	<link rel="stylesheet" href="http://cdn.bootcss.com/jquery-weui/0.8.0/css/jquery-weui.min.css">
+</head>
+<body>
+
+<div style="padding-top:24px;background-color: rgb(1,169,218);" class="weui_msg">
+	<div style="margin-bottom:10px;" class="weui_icon_area">
+		<img style="margin: 5px;width: 25%;border-radius: 100px;" src="images/mypicture.jpg">
+	</div>
+	<div class="weui_text_area">
+		<h2 class="weui_msg_title" style="color: rgb(255, 255, 255);padding-bottom:10px;">乃逸夫</h2>
+	</div>
+	<div style="position: absolute; top: 10px;" class="weui_extra_area">
+		<a style="color:#ffffff;margin-left:10px;float:left" href="index.html"><<返回</a>
+	</div>
+</div>
+
+<div class="weui_cells_title">个人信息</div>
+<div class="weui_cells weui_cells_form">
+	<div class="weui_cell">
+		<div class="weui_cell_hd">
+			<label class="weui_label">
+				姓名
+			</label>
+		</div>
+		<div class="weui_cell_bd weui_cell_primary">
+			<input class="weui_input" placeholder="请输入姓名" />
+		</div>
+	</div>
+	<div class="weui_cell weui_cell_select weui_select_after">
+		<div class="weui_cell_hd">
+			<label  for="" class="weui_label">
+				性别
+			</label>
+		</div>
+		<div class="weui_cell_bd weui_cell_primary">
+			<select class="weui_select" name="select2">
+				<option value="1">男</option>
+				<option value="2">女</option>
+			</select>
+		</div>
+	</div>
+	<div class="weui_cell">
+		<div class="weui_cell_hd">
+			<label class="weui_label" for="date">生日</label>
+		</div>
+		<div class="weui_cell_bd weui_cell_primary">
+			<input id="date" class="weui_input" value="1971-1-1" type="text" data-toggle='date' /></input>
+		</div>
+	</div>
+</div>
+<div class="weui_cells_title">联系方式</div>
+<div class="weui_cells weui_cells_form">
+	<div class="weui_cell weui_cell_select weui_select_before">
+		<div class="weui_cell_hd">
+			<select class="weui_select">
+				<option>+86</option>
+				<option>+84</option>
+				<option>+80</option>
+				<option>+82</option>
+			</select>
+		</div>
+		<div class="weui_cell_bd weui_cell_primary">
+			<input class="weui_input" patter="[0-9]*\" placeholder="请输入号码" />
+		</div>
+	</div>
+	<div class="weui_cell" id="contact">
+		<div class="weui_cell_hd">
+			<label for="" class="weui_label">QQ</label>
+		</div>
+		<div class="weui_cell_bd">
+			<input class="weui_input" patter="[0-9]*\" placeholder="请输入账号">
+		</div>
+	</div>
+	<div class="weui_panel weui_panel_access">
+		<a class="weui_panel_ft" href="javascript:void(0);" id="add_more">+添加更多</a>
+	</div>
+</div>
+
+<div class="weui_cells_title">地址</div>
+<div class="weui_cells weui_cells_form">
+	<div class="weui_cell">
+		<div class="weui_cell_hd">
+			<label class="weui_label">所在地</label>
+		</div>
+		<div class="weui_cell_bd weui_cell_primary">
+			<input readonly="" class="weui_input" id="home-city" value="广东省 珠海市 香洲区" type="text" />
+		</div>
+	</div>
+	<div class="weui_cell weui_cell_select weui_select_after">
+		<div class="weui_cell_hd">
+			<label class="weui_label">学校</label>
+		</div>
+
+		<div class="weui_cell_bd weui_cell_primary">
+			<select class="weui_select">
+				<option>暨南大学-本部</option>
+				<option>暨南大学-珠海校区</option>
+				<option>暨南大学-南校区</option>
+				<option>暨南大学-华文学院</option>
+				<option>暨南大学-深圳旅游学院</option>
+			</select>
+		</div>
+	</div>
+</div>
+<br>
+<a href="javascript:;" class="weui_btn weui_btn_primary"  style="background-color: rgb(216, 207, 24);margin:2%;">提交</a>
+
+<div id="inline-calendar"></div>
+
+
+<!-- JavaScript Files -->
+<script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/jquery-weui/0.8.0/js/jquery-weui.min.js"></script>
+<script type="text/javascript"></script>
+<script>
+      $("#date").calendar({
+        onChange: function (p, values, displayValues) {
+          console.log(values, displayValues);
+        }
+      });
+</script>
+<script src="http://cdn.bootcss.com/jquery-weui/0.8.0/js/city-picker.min.js"></script>
+<script type="text/javascript">
+ 	$("#home-city").cityPicker({
+        title: "选择所在地",
+        onChange: function (picker, values, displayValues) {
+          console.log(values, displayValues);
+        }
+    });
+  	$(document).on("click","#add_more",function(){ 
+  		$("#contact").after('<div class="weui_cell weui_cell_select weui_select_before" id="contact"><div class="weui_cell_hd"><select class="weui_select"><option>微信号</option><option>Email</option></select></div><div class="weui_cell_bd"><input class="weui_input" patter="[0-9]*\" placeholder="请输入账号"></div></div>')
+  	})
+
+</script>
+<!-- JavaScript Files -->
+</body>
+</html>

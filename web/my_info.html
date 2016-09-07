@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>我的信息</title>
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/weui/0.4.3/style/weui.min.css">
+	<link rel="stylesheet" href="http://cdn.bootcss.com/jquery-weui/0.8.0/css/jquery-weui.min.css">
+	<!-- CSS Files -->
+<style type="text/css">
+
+</style>
+</head>
+<body ontouchstart>
+
+<!-- head_info -->
+<div style="background-color: rgb(1,169,218);" class="weui_msg">
+	<div style="margin-bottom:10px;" class="weui_icon_area">
+		<img style="margin: 5px;width: 25%;border-radius: 100px;" src="images/mypicture.jpg">
+	</div>
+	<div class="weui_text_area">
+		<h2 class="weui_msg_title" style="color: rgb(255, 255, 255);">乃逸夫</h2>
+	</div>
+	<div style="position: absolute; top: 10px;" class="weui_extra_area">
+		<a style="color:#ffffff;margin-left:10px;float:left;" href="index.html"><<返回</a>
+		<a style="color:#ffffff;margin-right:10px;float:right;" href="edit_info.html">编辑>></a>
+	</div>
+</div>
+<!-- head_info -->
+
+<!-- tab -->
+<div class="weui_tab">
+<!-- nav -->
+	<div class="weui_navbar">
+		<a class="weui_navbar_item weui_bar_item_on" href="#myindex">个人主页</a>
+		<a class="weui_navbar_item"  href="#myinfo">详细信息</a>
+	</div>
+<!-- nav -->
+
+<!-- tab_body -->
+	<div class="weui_tab_bd" style="">
+<!-- myindex -->
+		<div id="myindex" class="weui_tab_bd_item  weui_tab_bd_item_active">
+	<!-- fun_cell -->
+			<div class="weui_cells weui_cells_access">
+				<a href="javascript:;" class="weui_cell">
+					<div class="weui_cell_hd">
+						<img src="images/icon_nav_msg.png" alt="" style="width:20px;margin-right:5px;display:block">
+					</div>
+					<div class="weui_cell_bd weui_cell_primary">
+						<p>我的订单</p>
+					</div>
+					<div class="weui_cell_ft">2</div>
+				</a>
+				<a href="javascript:;" class="weui_cell">
+					<div class="weui_cell_hd">
+						<img src="images/icon_nav_search_bar.png" alt="" style="width:20px;margin-right:5px;display:block">
+					</div>
+					<div class="weui_cell_bd weui_cell_primary">
+						<p>我的提问</p>
+					</div>
+					<div class="weui_cell_ft">10</div>
+				</a>
+				<a href="javascript:;" class="weui_cell">
+					<div class="weui_cell_hd">
+						<img src="images/icon_nav_dialog.png" alt="" style="width:20px;margin-right:5px;display:block">
+					</div>
+					<div class="weui_cell_bd weui_cell_primary">
+						<p>我的通知</p>
+					</div>
+					<div class="weui_cell_ft">27</div>
+				</a>
+				<a href="javascript:;" class="weui_cell">
+					<div class="weui_cell_hd">
+						<img src="images/icon_nav_button.png" alt="" style="width:20px;margin-right:5px;display:block">
+					</div>
+					<div class="weui_cell_bd weui_cell_primary">
+						<p>我的收藏</p>
+					</div>
+					<div class="weui_cell_ft">15</div>
+				</a>
+			</div>	
+	<!-- fun_cell -->
+	<!-- my_active -->
+			<div class="weui_panel weui_panel_access">
+				<div class="weui_panel_hd">最新动态</div>
+				<div class="weui_panel_bd">
+					<a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+						<div class="weui_media_hd">
+							<img class="weui_media_appmsg_thumb" src="images/icon_nav_panel.png" alt="">
+						</div>
+						<div class="weui_media_bd">
+							<h4 class="weui_media_title">新增订单</h4>
+							<p class="weui_media_desc">电脑>PC>电脑进水</p>
+							<p class="weui_media_desc">2016-09-04</p>
+						</div>
+					</a>
+					<a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+						<div class="weui_media_hd">
+							<img class="weui_media_appmsg_thumb" src="images/icon_nav_panel.png" alt="">
+						</div>
+						<div class="weui_media_bd">
+							<h4 class="weui_media_title">新增订单</h4>
+							<p class="weui_media_desc">手机>iPhone>iPhone8>手机贴膜</p>
+							<p class="weui_media_desc">2016-08-30</p>
+						</div>
+					</a>
+					<a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+						<div class="weui_media_hd">
+							<img class="weui_media_appmsg_thumb" src="images/icon_nav_dialog.png" alt="">
+						</div>
+						<div class="weui_media_bd">
+							<h4 class="weui_media_title">系统通知</h4>
+							<p class="weui_media_desc">您的提问已有回复</p>
+							<p class="weui_media_desc">2016-07-09</p>
+						</div>
+					</a>
+				</div>
+			</div>
+	<!-- my_active -->
+		</div>
+<!-- myindex -->
+
+<!-- myinfo -->
+		<div id="myinfo" class="weui_tab_bd_item">
+			<div class="weui_cells weui_cells_title" style="padding-top: 6px;">个人信息</div>
+			<div class="weui_cells">
+				<div class="weui_cell">
+					<div class="weui_cell_bd weui_cell_primary">
+						<p>姓名</p>
+					</div>
+					<div class="weui_cell_ft">
+						乃逸夫
+					</div>
+				</div>
+				<div class="weui_cell">
+					<div class="weui_cell_bd weui_cell_primary">
+						<p>性别</p>
+					</div>
+					<div class="weui_cell_ft">
+						男
+					</div>
+				</div>
+				<div class="weui_cell">
+					<div class="weui_cell_bd weui_cell_primary">
+						<p>生日</p>
+					</div>
+					<div class="weui_cell_ft">
+						2012-12-31
+					</div>
+				</div>
+			</div>
+			<div class="weui_cells weui_cells_title" style="padding-top: 6px;">联系方式</div>
+			<div class="weui_cells">
+				<div class="weui_cell">
+					<div class="weui_cell_bd weui_cell_primary">
+						<p>手机号</p>
+					</div>
+					<div class="weui_cell_ft">
+						+86 158********
+					</div>
+				</div>
+				<div class="weui_cell">
+					<div class="weui_cell_bd weui_cell_primary">
+						<p>QQ</p>
+					</div>
+					<div class="weui_cell_ft">
+						2950493715
+					</div>
+				</div>
+				<div class="weui_cell">
+					<div class="weui_cell_bd weui_cell_primary">
+						<p>微信</p>
+					</div>
+					<div class="weui_cell_ft">
+						L676098269
+					</div>
+				</div>
+				<div class="weui_cell">
+					<div class="weui_cell_bd weui_cell_primary">
+						<p>Email</p>
+					</div>
+					<div class="weui_cell_ft">
+						lylvanyoung@gmail.com
+					</div>
+				</div>
+			</div>
+			<div class="weui_cells weui_cells_title" style="padding-top: 6px;">地址信息</div>
+			<div class="weui_cells">
+				<div class="weui_cell">
+					<div class="weui_cell_bd weui_cell_primary">
+						<p>所在地</p>
+					</div>
+					<div class="weui_cell_ft">
+						广东省-珠海市-香洲区
+					</div>
+				</div>
+				<div class="weui_cell">
+					<div class="weui_cell_bd weui_cell_primary">
+						<p>学校</p>
+					</div>
+					<div class="weui_cell_ft">
+						暨南大学-珠海校区
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- myinfo -->
+<!-- tab_body -->
+</div>
+<!-- tab -->
+<script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+
+<script type="text/javascript">
+	$(function() {
+        $(".weui_navbar a").bind("click", function(){
+            //操作导航栏
+            $(".weui_bar_item_on").removeClass('weui_bar_item_on');
+            $(this).addClass("weui_bar_item_on");
+            //操作内容切换
+            $(".weui_tab_bd .weui_tab_bd_item_active").removeClass('weui_tab_bd_item_active');
+            var data_toggle = $(this).attr("href");
+            $(data_toggle).addClass("weui_tab_bd_item_active");      
+        });
+    });
+</script>
+
+</body>
+</html>

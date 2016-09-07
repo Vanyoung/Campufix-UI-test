@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>注册</title>
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/weui/0.4.3/style/weui.min.css">
+	<link rel="stylesheet" href="http://cdn.bootcss.com/jquery-weui/0.8.0/css/jquery-weui.min.css">
+	<!-- CSS Files -->
+<style type="text/css">
+body{background-color: rgb(1,169,218);}
+</style>
+</head>
+<body ontouchstart>
+<div style="padding-top: 24px;" class="weui_msg">
+	<div style="margin-bottom:10px;" class="weui_icon_area">
+		<img style="margin: 5px;width: 30%;display:inline-block;border-radius: 100px;" src="images/campufix.jpg">
+	</div>
+	<div class="weui_text_area">
+		<h2 class="weui_msg_title" style="color: rgb(255, 255, 255); font-size: 32px;">CampuFix</h2>
+	</div>
+	<div class="weui_opr_area">
+		<p class="weui_btn_area">
+			<input class="weui_btn weui_btn_default" type="text" placeholder="请填写账号"/>
+			<input class="weui_btn weui_btn_default" type="password" placeholder="请填写密码" />
+			<input class="weui_btn weui_btn_default" type="password" placeholder="请确认密码" />
+			<a style=" color: rgb(255, 255, 255); background-color: rgb(239, 230, 60);" href="javascript:;" class="weui_btn weui_btn_primary" id="regist">注册</a>
+		</p>
+	</div>
+	<div class="weui_extra_area">
+		<a style="float:right;color:#ffffff;margin-right:10px;" href="login.html">已有账号>></a>
+		<a style="color:#ffffff;margin-top:10px;position:absolute;bottom:430px;left:10px;" href="index.html"><<返回</a>
+	</div>
+</div>
+
+<!-- JavaScript Files -->
+<script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/jquery-weui/0.8.0/js/jquery-weui.min.js"></script>
+<script type="text/javascript">
+$(document).on("click","#regist",function(){
+	$.showLoading("正在注册...");
+})
+
+</script>
+<!-- JavaScript Files -->
+</body>
+</html>

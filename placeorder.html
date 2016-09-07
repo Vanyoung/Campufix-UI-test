@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>我要下单</title>
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/weui/0.4.3/style/weui.min.css">
+	<link rel="stylesheet" href="//cdn.bootcss.com/jquery-weui/0.8.0/css/jquery-weui.min.css">
+	<!-- CSS Files -->
+	<style type="text/css">
+		.brand{display: none;}
+		.brand_first{display: block;}
+		.model{display: none;}
+		.model_first{display: block;}
+	</style>
+</head>
+<body>
+<!-- JavaScript Files-->
+ <script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+<!-- JavaScript Files -->
+
+<div class="weui_cells_title">填写订单</div>
+<div class="weui_cells weui_cells_form">
+	<div class="weui_cell weui_cell_select weui_select_after">
+		<div class="weui_cell_hd">
+			<label class="weui_label">种类</label>
+		</div>
+		<div class="weui_cell_bd weui_cell_primary">
+			<select class="weui_select species">
+				<option>--请选择种类--</option>
+				<option value="phone">手机</option>
+				<option value="computer">电脑</option>
+				<option value="pad">平板</option>
+			</select>
+		</div>
+	</div>
+	<div class="weui_cell weui_cell_select weui_select_after">
+		<div class="weui_cell_hd">
+			<label class="weui_label">品牌</label>
+		</div>
+		<div class="weui_cell_bd weui_cell_primary">
+			<select class="weui_select brand brand_first">
+				<option>--请选择品牌--</option>
+			</select>
+			<select class="weui_select brand">
+				<option value="phone">--请选择品牌--</option>
+				<option value="phone">iPhone</option>
+				<option value="phone">三星</option>
+				<option value="phone">华为</option>
+				<option value="phone">小米</option>
+				<option value="phone">魅族</option>
+				<option value="phone">其他手机</option>
+			</select>
+			<select class="weui_select brand">
+				<option>--请选择品牌--</option>
+				<option value="computer">Mac</option>
+				<option value="computer">PC</option>
+			</select>
+			<select class="weui_select brand">
+				<option>--请选择品牌--</option>
+				<option>iPad</option>
+				<option>其他平板</option>
+			</select>
+		</div>
+	</div>
+	<div class="weui_cell weui_cell_select weui_select_after">
+		<div class="weui_cell_hd">
+			<label class="weui_label">型号</label>
+		</div>
+		<div class="weui_cell_bd weui_cell_primary">
+			<select class="weui_select model model_first">
+				<option>--请选择型号--</option>
+			</select>
+			<select class="weui_select model">
+				<option value="phone">--请选择型号--</option>
+				<option value="phone">iPhone 4s</option>
+				<option value="phone">iPhone 5</option>
+				<option value="phone">iPhone 5c</option>
+				<option value="phone">iPhone 5s</option>
+				<option value="phone">iPhone 6</option>
+				<option value="phone">iPhone 6p</option>
+				<option value="phone">iPhone 6s</option>
+				<option value="phone">iPhone 6sp</option>
+				<option value="phone">iPhone 6se</option>
+			</select>
+			<select class="weui_select model">
+				<option value="phone">--请选择型号--</option>
+				<option value="phone">Note2</option>
+				<option value="phone">Note3</option>
+				<option value="phone">Note4</option>
+				<option value="phone">S3</option>
+				<option value="phone">S4</option>
+				<option value="phone">S5</option>
+				<option value="phone">S6</option>
+				<option value="phone">S6 Edge</option>
+				<option value="phone">三星其他型号</option>
+			</select>
+			<select class="weui_select model">
+				<option value="phone">--请选择型号--</option>
+				<option value="phone">Mate S</option>
+				<option value="phone">Mate 7</option>
+				<option value="phone">Mate 8</option>
+				<option value="phone">P7</option>
+				<option value="phone">P8</option>
+				<option value="phone">P8 MAX</option>
+				<option value="phone">P8 青春版</option>
+				<option value="phone">荣耀6</option>
+				<option value="phone">荣耀6 Plus</option>
+				<option value="phone">华为其他型号</option>
+			</select>
+			<select class="weui_select model">
+				<option value="phone">--请选择型号--</option>
+				<option value="phone">2S</option>
+				<option value="phone">4c</option>
+				<option value="phone">Mi 3</option>
+				<option value="phone">Mi 4</option>
+				<option value="phone">Note</option>
+				<option value="phone">小米其他型号</option>
+			</select>
+			<select class="weui_select model">
+				<option value="phone">--请选择型号--</option>
+				<option value="phone">MX4</option>
+				<option value="phone">MX4 Pro</option>
+				<option value="phone">MX5</option>
+				<option value="phone">魅蓝</option>
+				<option value="phone">魅蓝2</option>
+				<option value="phone">魅蓝metal</option>
+				<option value="phone">魅蓝note</option>
+				<option value="phone">魅蓝note2</option>
+				<option value="phone">魅蓝其他型号</option>
+			</select>
+			<select class="weui_select model">
+				<option value="phone">--请选择型号--</option>
+				<option value="phone">其他手机型号</option>
+			</select>
+			<select class="weui_select model">
+				<option value="computer">--请选择型号--</option>
+				<option value="computer">Mac</option>
+			</select>
+			<select class="weui_select model">
+				<option value="computer">--请选择型号--</option>
+				<option value="computer">PC</option>
+			</select>
+			<select class="weui_select model">
+				<option value="pad">--请选择型号--</option>
+				<option value="pad">iPad2</option>
+				<option value="pad">iPad3</option>
+				<option value="pad">iPad4</option>
+				<option value="pad">iPad Air</option>
+				<option value="pad">iPad Air2</option>
+				<option value="pad">iPad Mini</option>
+				<option value="pad">iPad Mini2</option>
+				<option value="pad">iPad Mini3</option>
+			</select>
+				<select class="weui_select model">
+				<option value="pad">--请选择型号--</option>
+				<option value="pad">其他平板</option>
+			</select>
+		</div>
+	</div>
+</div>
+<script>
+
+</script>
+</body>
+</html>

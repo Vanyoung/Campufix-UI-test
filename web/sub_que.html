@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>发布问题</title>
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/weui/0.4.3/style/weui.min.css">
+	<link rel="stylesheet" href="http://cdn.bootcss.com/jquery-weui/0.8.0/css/jquery-weui.min.css">
+	<!-- CSS Files -->
+</head>
+<body ontouchstart>
+
+<div style="background-color: rgb(1,169,218);padding-top:0;" class="weui_msg">
+	<div class="weui_text_area">
+		<h2 class="weui_msg_title" style="color: rgb(255, 255, 255);padding:10px ">发布问题</h2>
+	</div>
+	<div style="position: absolute; top: 15px;" class="weui_extra_area">
+		<a style="color:#ffffff;margin-left:10px;float:left;" href="que_sqr.html"><<返回</a>
+	</div>
+</div>
+
+<div class="weui_cells weui_cells_form">
+    <div class="weui_cell">
+    	<div class="weui_cell_hd"><label class="weui_label">问题标题</label></div>
+   		<div class="weui_cell_bd weui_cell_primary">
+      		<input class="weui_input" type="text" placeholder="请输入标题">
+    	</div>
+  	</div>
+  	<div class="weui_cell ">
+  		<div class="weui_cell_hd"><label class="weui_label">问题类型</label></div>
+    	<div class="weui_cell_bd weui_cell_primary">
+    		<input class="weui_input" type="text" id="species" />
+    	</div>
+  	</div>
+  	<div class="weui_cell weui_cell_switch">
+    	<div class="weui_cell_hd weui_cell_primary">接受通知</div>
+    	<div class="weui_cell_ft">
+      		<input class="weui_switch" type="checkbox">
+    	</div>
+  	</div>
+</div>
+<div class="weui_cells_title">问题描述</div>
+<div class="weui_cells weui_cells_form">
+  	<div class="weui_cell">
+    	<div class="weui_cell_bd weui_cell_primary">
+     	<textarea class="weui_textarea" placeholder="请添加描述" rows="3"></textarea>
+      	<div class="weui_textarea_counter"><span>0</span>/200</div>
+    	</div>
+ 	</div>
+  	<div class="weui_cell"></div>
+</div>
+
+<a href="javascript:;" class="weui_btn weui_btn_primary" id="sub_sqr" style="margin:15px 5%;background-color:rgb(239, 230, 60);">发布</a>
+
+<!-- JavaScript Files -->
+<script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/jquery-weui/0.8.0/js/jquery-weui.min.js"></script>
+<script type="text/javascript">
+$("#species").picker({
+  title: "请选择问题类型",
+  cols: [
+    {
+      textAlign: 'center',
+      values: ['手机','电脑','平板']
+    }
+  ]
+});
+ $(document).on("click","#sub_sqr",function(){
+ 	$.actions({
+  actions: [{
+    text: "发布",
+    className:"color-success",
+    onClick: function() {
+      $.toptip('发布成功', 'success');
+    }
+  },{
+    text: "清空",
+    className:"color-danger",
+    onClick: function() {
+      $.toptip('已清空', 'error');
+    }
+  }]
+});
+});
+</script>
+<!-- JavaScript Files -->
+</body>
+</html>

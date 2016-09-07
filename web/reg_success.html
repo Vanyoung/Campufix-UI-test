@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>注册成功</title>
+
+	<link rel="stylesheet" href="http://cdn.bootcss.com/weui/0.4.3/style/weui.min.css">
+	<link rel="stylesheet" href="http://cdn.bootcss.com/jquery-weui/0.8.0/css/jquery-weui.min.css">
+
+<style type="text/css">
+.article_header{
+	padding: 35px 0;
+}
+.article_second_title{
+	text-align: center;
+	font-size: 24px;
+	color: rgb(1,169,218);
+	font-weight: 400;
+	margin: 0 15%
+}
+.article_sub_title{
+	text-align: center;
+	color: #888;
+	font-size: 14px;
+}
+</style>
+</head>
+<body>
+	<div class="weui_msg">
+		<div class="weui_icon_area"><i class="weui_icon_msg weui_icon_success weui_icon_info"></i></div>
+		<div class="weui_text_area">
+			<h2 class="weui_msg_title">注册成功</h2>
+		</div>
+		<div class="weui_opr_area">
+			<p class="weui_btn_area">
+				<a href="javascirpt:;" class="weui_btn weui_btn_plain_primary" style="color: rgb(1,169,218);border-color: rgb(1,169,218);" id="login">登陆</a>
+				<a href="javascript:;" class="weui_btn weui_btn_plain_default" id="cancel">取消</a>
+			</p>
+		</div>
+		<div class="weui_extra_area">
+			<a href="javascript:;" class="open-popup" data-target="#full">查看详情</a>
+		</div>
+	</div>
+
+<div id="full" class='weui-popup-container'>
+      <div class="weui-popup-overlay"></div>
+      <div class="weui-popup-modal">
+        <header class='article_header'>
+          <h2 class="article_second_title">关于 CampuFix</h2>
+          <p class="article_sub_title">By CampuFix团队</p>
+        </header>
+
+        <article class="weui_article">
+          <h1>大标题</h1>
+          <section>
+            <h2 class="title">章标题</h2>
+            <section>
+              <h3>1.1 节标题</h3>
+              <p>文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案</p>
+            </section>
+            <section>
+              <h3>1.2 节标题</h3>
+              <p>文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案</p>
+            </section>
+          </section>
+          <section>
+            <a href="javascript:;" class="weui_btn weui_btn_plain_primary close-popup" id="cancel_art" style="border-color:rgb(1,169,218);color:rgb(1,169,218);">关闭</a>
+          </section>
+        </article>
+      </div>
+    </div>
+
+<script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/jquery-weui/0.8.0/js/jquery-weui.min.js"></script>
+<script type="text/javascript">
+$(document).on("click","#login",function(){
+	$.toast("登陆成功");
+})
+$(document).on("click","#cancel_log",function(){
+	$.toast("取消登录","cancel")
+})
+$(document).on("click","#cancel_art",function(){
+	$.toptip("操作成功","success")
+})
+</script>
+</body>
+</html>
