@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="aui/css/aui.2.0.css" />
+    <link rel="stylesheet" href="http://cdn.bootcss.com/weui/0.4.3/style/weui.min.css">
+<style type="text/css">
+ul,li,a{text-decoration: none;}
+.aui-content{
+    margin-top:0.75rem;
+}
+.aui-btn{
+	padding: 0.25rem 0.4rem;
+}
+.aui-btn span{
+	background-color:rgb(204,230,229);
+	border-color:rgb(237,249,247);
+	border-width:2px;
+	border-radius:5rem;
+}
+.aui-title{
+	margin-right: 25%;
+}
+/*.aui-active img{??????????????????????????????????????????????????????????????????????????????????????????????????????????}/*/
+
+.aui-bar.aui-bar-nav{
+	background-color:#07395f;
+	padding:0.5rem 0;
+}
+.top-arrow{
+	border-bottom: 10px solid #07395f;
+	border-left: 10px solid transparent;
+	border-right:10px solid transparent;
+	width: 0;
+	height: 0;
+	margin-left: 48%;
+}
+.aui-bar-btn-item{
+	border: none;
+	height:2.25rem; 
+	font-size: 0.8rem;
+}
+
+.weui_cells_title{
+	font-size: 0.8rem;
+	color: #000;
+}
+.weui_cell_bd{
+	color: #757575;
+}
+.weui_navbar{
+	width: 75%;
+	margin-left:12%;
+}
+.navbar_item {
+	
+  	position: relative;
+  	display: block;
+  	-webkit-box-flex: 1;
+  	-webkit-flex: 1;
+          	flex: 1;
+  	padding: 13px 0;
+  	text-align: center;
+  	font-size: 15px;
+}
+.navbar_item .aui-card-list-user-avatar{
+	margin:0 35%;
+}
+.aui-active .aui-iconfont,.aui-active .aui-bar-tab-label{
+    color: #f54d4c;
+}
+</style>
+</head>
+<body>
+
+<header class="aui-bar aui-bar-nav" style="background-color:#f54d4c;padding-top:25px;">
+    <a class="aui-pull-left">
+        <span class="aui-iconfont aui-icon-left"></span>
+    </a>
+    <div class="aui-title">配送中</div>
+    <a href="" class="aui-pull-right">
+    	<p style="color:#ffffff;font-size:16px;">奖励规则</p>
+    </a>
+</header>
+
+
+
+<div class="aui-bar aui-bar-nav" style="background-color:inherit;">
+	<a class="aui-pull-left aui-btn" style="z-index:999;">
+        <span class="aui-iconfont aui-icon-left" style="padding:0 0.2rem;"></span>
+    </a>
+
+  		<div class="weui_navbar">
+    		<div class="navbar_item">
+      			<div class="aui-card-list-user-avatar">       
+           			<img src="aui/image/demo1.png" class="aui-img-round">
+       			</div>
+    		</div>
+    		<div class="navbar_item">
+      			<div class="aui-card-list-user-avatar aui-active">       
+            		<img src="aui/image/demo2.png" class="aui-img-round">           	
+        		</div>
+    		</div>
+    		<div class="navbar_item">
+      			<div class="aui-card-list-user-avatar">       
+            		<img src="aui/image/demo3.png" class="aui-img-round">
+        		</div>
+    		</div>
+  		</div>
+
+	<a class="aui-pull-right aui-btn" style="z-index:999;">
+        <span class="aui-iconfont aui-icon-right" style="padding:0 0.2rem;"></span>
+    </a>
+</div>
+
+
+<div class="aui-content">
+	<div class="top-arrow"></div>
+	<div class="aui-bar aui-bar-nav">
+		<p style="color:rgb(199,209,219);">取餐号：<span style="font-size:24px;font-weight:bold;color:#50d3d3;">1234</span></p>
+	</div>
+</div>
+
+<div class="aui-margin-t-10">
+	<div class="weui_cells_title">水利水电(新宇食堂)</div>
+	<div class="weui_cells">
+		<div class="weui_cell">
+			<div class="weui_cell_hd  weui_cell_primary" style="color:#757575;">奥尔良鸡腿饭</div>
+			<div class="weui_cell_bd  weui_cell_primary">x1</div>
+			<div class="weui_cell_ft">档口名</div>
+		</div>
+		<div class="weui_cell">
+			<div class="weui_cell_hd weui_cell_primary" style="color:#757575;">奥尔良鸡腿饭</div>
+			<div class="weui_cell_bd weui_cell_primary">x1</div>
+			<div class="weui_cell_ft">档口名</div>
+		</div>
+	</div>
+</div>
+<div class="aui-margin-t-10">
+	<div class="weui_cells">
+		<div class="weui_cell">
+			<div class="weui_cell_hd">收货人：</div>
+			<div class="weui_cell_bd">吴某某</div>
+		</div>
+		<div class="weui_cell">
+			<div class="weui_cell_hd">手机号：</div>
+			<div class="weui_cell_bd weui_cell_primary" style="color:rgb(52,152,219);">18723456789</div>
+			<div class="weui_cell_ft">
+				<a href="" class="aui-btn aui-btn-outlined" style="border-radius:10rem;border-color:#757575;
+				;">
+				<i class="aui-iconfont aui-icon-phone" style="margin:0;color:#757575;"></i>
+				</a>
+			</div>
+		</div>
+		<div class="weui_cell">
+			<div class="weui_cell_hd">收货地址：</div>
+			<div class="weui_cell_bd">研究生楼1114室</div>
+		</div>
+	</div>
+</div>
+
+<div class="aui-margin-t-10">
+	<div class="weui_cells">
+		<div class="weui_cell">
+			<div class="weui_cell_hd">订单编号：</div>
+			<div class="weui_cell_bd">1234535466</div>
+		</div>
+		<div class="weui_cell">
+			<div class="weui_cell_hd">送达时间：</div>
+			<div class="weui_cell_bd">17:35-18:15</div>
+		</div>
+		<div class="weui_cell">
+			<div class="weui_cell_hd">本单收入：</div>
+			<div class="weui_cell_bd" style="color:#f54d4c;">￥2</div>
+		</div>
+	</div>
+</div>
+
+<div class="aui-bar aui-bar-btn aui-bar-btn-full">
+ 	<a href="" class="aui-bar-btn-item" style="color:#000;">联系用户</a>
+   	<a href="transsuc.html" class="aui-bar-btn-item" style="background-color:#50d3d3;color:#fff;">完成配送</a>
+</div>
+
+</body>
+</html>

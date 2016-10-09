@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="aui/css/aui.2.0.css" />
+    <link rel="stylesheet" type="text/css" href="aui/css/aui-slide.css" />
+
+<style type="text/css">
+.aui-content{
+    margin-bottom: 3.25rem;
+}
+.aui-banner-row{
+    display: flex;
+    flex-flow: row;
+}.left{flex:1}.right{flex:1}
+.aui-banner{
+    background-color: #FFFFFF;
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    width: 50%;
+}
+.aui-banner-box{
+    margin-left: 10px;
+    position: relative;
+}
+a.aui-banner-box{
+    color: #000000;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.aui-banner-title{
+    font-weight: bold;
+    font-size: 16px;
+    color:#999999;
+    width: auto;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.aui-banner-desc{
+    margin: 0 5%;
+    padding: 0;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+
+}
+.aui-banner-box.aui-banner-appmsg{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+}
+.aui-banner-box.aui-banner-appmsg .aui-banner-hd {
+    margin-right: .8em;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.aui-banner-box.aui-banner-appmsg .aui-banner-appmsg-thumb{
+    width: 100%;
+    max-height: 100%;
+    vertical-align: top;
+}
+.aui-banner-box.aui-banner-appmsg .aui-banner-bd{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+            flex: 1;
+    min-width: 0;
+}
+.aui-list .aui-list-item-label-icon{
+    width: 80%;
+}
+.aui-list .aui-list-item{
+    padding-top: 0;padding-bottom: 1px;
+}
+.aui-list-item-title p{
+    color:#000000;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Microsoft Yahei";
+    text-overflow: ellipsis;
+}
+.aui-info{
+    padding:0;
+}
+.aui-btn.aui-btn-outlined{
+    border-radius: 2rem;
+    padding: 0 0.2rem;
+}
+.aui-iconfont.aui-icon-plus{
+    color: #f54d4c;
+    margin: 0;
+}
+.aui-active .aui-iconfont,.aui-active .aui-bar-tab-label{
+    color: #f54d4c;
+}
+.aui-iconfont,.aui-bar-tab-label{
+    color: #757575;
+}
+</style>
+</head>
+
+<body>
+<header class="aui-bar aui-bar-nav"  style="background-color:#f54d4c;padding-top:25px;">
+    <div class="aui-title" style="font-size:16px;font-weight:bold;left:2rem;right:2rem;">
+        <a class="aui-btn">
+            <span class="aui-iconfont aui-icon-location"></span>
+        </a>
+        西润楼食堂(新宇餐厅)
+        <a class="aui-btn">
+            <span class="aui-iconfont aui-icon-down"></span>
+        </a>
+    </div>
+    <a class="aui-pull-right">
+        <span class="aui-iconfont aui-icon-share"></span>
+    </a>
+</header>
+
+<div id="aui-slide">
+    <div class="aui-slide-wrap" >
+        <div class="aui-slide-node aui-slide-node-middle aui-slide-node-center bg-dark">
+            <img src="images/ad1.jpg" />
+        </div>
+        <div class="aui-slide-node aui-slide-node-middle aui-slide-node-center">
+            <img src="images/ad2.jpg" />
+        </div>
+    </div>
+    <div class="aui-slide-page-wrap"><!--分页容器--></div>
+</div>
+
+<div class="aui-banner-row">
+    <div class="aui-banner">
+        <a href="" class="aui-banner-box aui-banner-appmsg">
+            <div class="aui-banner-hd">
+                <img class="aui-banner-appmsg-thumb" src="images/ad3.png" alt="" />
+            </div>
+            <div class="aui-banner-bd">
+                <h4 class="aui-banner-title">预定早餐</h4>
+                <p class="aui-banner-desc" style="background-color:#ff6c6c;">提供三天预定</p>
+            </div>
+        </a>
+    </div>
+    <div class="aui-banner">
+        <a href="" class="aui-banner-box aui-banner-appmsg">
+            <div class="aui-banner-hd">
+                <img class="aui-banner-appmsg-thumb" src="images/ad4.png" alt="" />
+            </div>
+            <div class="aui-banner-bd">
+                <h4 class="aui-banner-title">水果零食</h4>
+                <p class="aui-banner-desc" style="background-color:#50d3d3">全天供应</p>
+            </div>
+        </a>
+    </div>
+</div>
+
+<header class="aui-bar aui-bar-nav" style="background-color:rgb(250,250,250);min-height:24px;">
+        <a class="aui-pull-left aui-btn" style="height:24px;">
+            <span class="aui-iconfont aui-icon-cart" style="color:#ff6c6c;"></span>
+            <p style="color:#000000;font-size:15px;">美味套餐饭</p>
+        </a>
+        <a class="aui-pull-right aui-btn" style="height:24px;">
+            <p style="color:#000000;font-size:12px;color:#999999;">分类</p>
+            <span class="aui-iconfont aui-icon-down" style="color:#999999;font-size:12px;"></span>
+        </a>
+</header>
+
+<div class="aui-content">
+    <div class="aui-list aui-media-list">
+    <div class="aui-media-list-item-inner">
+        <div class="aui-list-item-label-icon">
+            <img src="images/food1.png" alt="" />
+        </div>
+        <div class="aui-list-item-inner">
+            <div class="aui-list-item-title">
+                <p>黑椒牛柳美味套餐</p>
+            </div>
+            <div class="aui-list-item-text">
+                <p>黑椒牛柳+随机配菜*2+米饭</p>
+            </div>
+            <div class="aui-info" style="margin-top:10px;">
+                <p style="color:rgb(239,168,42);"><span style="background-color:rgb(239,168,42);color:#ffffff;padding:0 4px;border-radius:3px;">售</span>39份</p>
+            </div>
+            <div class="aui-info">
+                <p style="color:#f54d4c;font-size:16px;font-weight:400;">￥11.00</p>
+                <div class="aui-list-item-btn">
+                    <a href="" class="aui-btn aui-btn-outlined">
+                        <i class="aui-iconfont aui-icon-plus"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="aui-media-list-item-inner">
+        <div class="aui-list-item-label-icon">
+            <img src="images/food2.png" alt="" />
+        </div>
+        <div class="aui-list-item-inner">
+            <div class="aui-list-item-title">
+                <p>鸡排美味套餐饭</p>
+            </div>
+            <div class="aui-list-item-text">
+                <p>鸡排+随机配菜*2+米饭</p>
+            </div>
+            <div class="aui-info" style="margin-top:10px;">
+                <p style="color:rgb(239,168,42);"><span style="background-color:rgb(239,168,42);color:#ffffff;padding:0 4px;border-radius:3px;">售</span>74份</p>
+            </div>
+            <div class="aui-info">
+                <p style="color:#f54d4c;font-size:16px;font-weight:400;">￥11.00</p>
+                <div class="aui-list-item-btn">
+                    <a href="" class="aui-btn aui-btn-outlined">
+                        <i class="aui-iconfont aui-icon-plus"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="aui-media-list-item-inner">
+        <div class="aui-list-item-label-icon">
+            <img src="images/food3.png" alt="" />
+        </div>
+        <div class="aui-list-item-inner">
+            <div class="aui-list-item-title">
+                <p>鸡腿美味套餐饭</p>
+            </div>
+            <div class="aui-list-item-text">
+                <p>鸡腿+随机配菜*2+米饭</p>
+            </div>
+            <div class="aui-info" style="margin-top:10px;">
+                <p style="color:rgb(239,168,42);"><span style="background-color:rgb(239,168,42);color:#ffffff;padding:0 4px;border-radius:3px;">售</span>63份</p>
+            </div>
+            <div class="aui-info">
+                <p style="color:#f54d4c;font-size:16px;font-weight:400;">￥11.00</p>
+                <div class="aui-list-item-btn">
+                    <a href="" class="aui-btn aui-btn-outlined">
+                        <i class="aui-iconfont aui-icon-plus"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<footer class="aui-bar aui-bar-tab" id="footer">
+    
+        <div class="aui-bar-tab-item aui-active" tapmode>
+        <a href="index.html">
+            <i class="aui-iconfont aui-icon-cart"></i>
+            <div class="aui-bar-tab-label">外卖</div>
+        </a>
+        </div>
+  
+    
+    <div class="aui-bar-tab-item" tapmode>
+    <a href="getform.html">
+        <i class="aui-iconfont aui-icon-paper"></i>
+        <div class="aui-bar-tab-label">顺风餐</div>
+    </a>
+    </div>
+   
+    
+    <div class="aui-bar-tab-item" tapmode>
+    <a href="find.html">
+        <i class="aui-iconfont aui-icon-search"></i>
+        <div class="aui-bar-tab-label">发现</div>
+    </a>
+    </div>
+    
+    
+    <div class="aui-bar-tab-item" tapmode>
+    <a href="my.html">
+        <i class="aui-iconfont aui-icon-my"></i>
+        <div class="aui-bar-tab-label">我的</div>
+    </a>
+    </div>
+    
+</footer>
+
+<script type="text/javascript" src="aui/script/aui-slide.js"></script>
+<script type="text/javascript">
+var slide = new auiSlide({
+    container:document.getElementById("aui-slide"), //容器
+    //"width":360, //宽度
+    "height":80, //高度
+    "speed":500, //速度
+    "autoPlay": 3000, //自动播放
+    "loop":true,//是否循环
+    "pageShow":true,//是否显示分页器
+    "pageStyle":'dot', //分页器样式，分dot,line
+    'dotPosition':'right' //当分页器样式为dot时控制分页器位置，left,center,right
+})
+</script>
+
+</body>
+</html>

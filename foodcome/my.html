@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="aui/css/aui.2.0.css" />
+    <link rel="stylesheet" href="http://cdn.bootcss.com/weui/0.4.3/style/weui.min.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/jquery-weui/0.8.0/css/jquery-weui.min.css">
+<style type="text/css">
+.blur {
+    filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */    
+    -webkit-filter: blur(10px); /* Chrome, Opera */
+       -moz-filter: blur(10px);
+        -ms-filter: blur(10px);   
+            filter: blur(10px);
+   filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */
+}
+.weui_msg{
+	background-color:rgba(197,166,163,0.7);
+	padding-top: 60px;
+}
+.weui_msg .weui_icon_area{
+	margin-bottom: 10px;
+
+}
+.weui_icon_area img{
+	margin: 5px;
+	width: 20%;
+	border-radius: 5rem;
+	border: 3px solid #fff;
+}
+.weui_msg .weui_text_area{
+	margin-bottom: 0;
+}
+.weui_text_area .weui_msg_title{
+	color: #ffffff;
+	font-size: 22px;
+	margin-bottom: 0;
+}
+.weui_msg .weui_extra_hd_area{
+	margin-top: 40px;
+	font-size: 14px;
+}
+.weui_msg .weui_extra_hd_area a,.weui_msg .weui_extra_area a{
+	color:#ffffff;
+}
+@media screen and (min-height: 438px) {
+  .weui_extra_hd_area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+.weui_navbar{
+	position: relative;
+}
+.weui_navbar_item{
+	padding: 8px 0;
+}
+
+.weui_cell_hd{
+	margin-right: 10px;
+	border-radius: 5rem;
+	padding: 0.15rem 0.45rem;
+}
+.weui_cell_hd i{
+	font-size: 20px;
+	color: #fff;
+}
+.weui_cell_bd{
+	font-size: 18px;
+	color: #000;
+}
+.aui-active .aui-iconfont,.aui-active .aui-bar-tab-label{
+    color: #f54d4c;
+}
+.aui-iconfont,.aui-bar-tab-label{
+    color: #757575;
+}
+</style>
+</head>
+<body>
+
+<div class="weui_tab">
+
+<!-- head_info -->
+<div class="weui_msg">	
+	<div class="weui_icon_area">
+		<img src="aui/image/demo3.png">
+	</div>
+	
+	<div class="weui_text_area">
+		<h2 class="weui_msg_title">15659814851</h2>
+	</div>
+	<div class="weui_extra_hd_area">
+		<a href="" style="float:right;margin-right:10px;">
+        	<span class="aui-iconfont aui-icon-share"></span>
+    	</a>
+	</div>
+</div>
+</div>
+<div class="weui_tab_bd">
+	<div class="weui_navbar">
+    <a class="weui_navbar_item weui_bar_item_on">
+      	<div class="weui_cell" style="padding:0 30px;">
+      		<div class="weui_cell_hd" style="background-color:rgb(252,134,128);">
+      			<i class="aui-iconfont aui-icon-calendar"></i>
+      		</div>
+      		<div class="weui_cell_bd">我的钱包</div>
+      	</div>
+    </a>
+    <a href="mytrans.html" class="weui_navbar_item">
+      	<div class="weui_cell" style="padding:0 30px;">
+      		<div class="weui_cell_hd" style="background-color:rgb(255,179,70);">
+      			<i class="aui-iconfont aui-icon-cart"></i>
+      		</div>
+      		<div class="weui_cell_bd">我的配送</div>
+      	</div>
+    </a>
+  	</div>
+
+<div class="aui-margin-t-5">
+	<div class="weui_cells weui_cells_access">
+		<a href="" class="weui_cell">
+			<div class="weui_cell_hd">
+				<i class="aui-iconfont aui-icon-my" style="color:#50d3d3;"></i>
+			</div>
+			<div class="weui_cell_bd weui_cell_primary">
+				昵称
+			</div>
+			<div class="weui_cell_ft">未设置</div>
+		</a>
+		<a href="" class="weui_cell">
+			<div class="weui_cell_hd">
+				<i class="aui-iconfont aui-icon-lock" style="color:#50d3d3;"></i>
+			</div>
+			<div class="weui_cell_bd weui_cell_primary">
+				修改账户密码
+			</div>
+			<div class="weui_cell_ft"></div>
+		</a>
+		<a href="" class="weui_cell">
+			<div class="weui_cell_hd">
+				<i class="aui-iconfont aui-icon-map" style="color:#ff6c6c;"></i>
+			</div>
+			<div class="weui_cell_bd weui_cell_primary">
+				管理收货地址
+			</div>
+			<div class="weui_cell_ft"></div>
+		</a>
+	</div>
+</div>
+
+<div class="aui-margin-t-5">
+	<div class="weui_cells weui_cells_access">
+		<a href="" class="weui_cell">
+			<div class="weui_cell_hd">
+				<i class="aui-iconfont aui-icon-menu" style="color:rgb(255,179,70);"></i>
+			</div>
+			<div class="weui_cell_bd weui_cell_primary">
+				我的订单
+			</div>
+			<div class="weui_cell_ft"></div>
+		</a>
+		<a href="" class="weui_cell">
+			<div class="weui_cell_hd">
+				<i class="aui-iconfont aui-icon-cert" style="color:#ff6c6c;"></i>
+			</div>
+			<div class="weui_cell_bd weui_cell_primary">
+				我的优惠券
+			</div>
+			<div class="weui_cell_ft"></div>
+		</a>
+	</div>
+</div>
+
+<div class="aui-margin-t-5">
+	<div class="weui_cells weui_cells_access">
+		<a href="" class="weui_cell">
+			<div class="weui_cell_hd">
+				<i class="aui-iconfont aui-icon-gear" style="color:#50d3d3;"></i>
+			</div>
+			<div class="weui_cell_bd weui_cell_primary">
+				设置
+			</div>
+			<div class="weui_cell_ft"></div>
+		</a>
+		<a href="" class="weui_cell">
+			<div class="weui_cell_hd">
+				<i class="aui-iconfont aui-icon-more" style="color:#50d3d3;"></i>
+			</div>
+			<div class="weui_cell_bd weui_cell_primary">
+				更多
+			</div>
+			<div class="weui_cell_ft"></div>
+		</a>
+	</div>
+</div>
+
+<footer class="aui-bar aui-bar-tab" id="footer">
+    
+        <div class="aui-bar-tab-item" tapmode>
+        <a href="index.html">
+            <i class="aui-iconfont aui-icon-cart"></i>
+            <div class="aui-bar-tab-label">外卖</div>
+        </a>
+        </div>
+  
+    
+    <div class="aui-bar-tab-item" tapmode>
+    <a href="getform.html">
+        <i class="aui-iconfont aui-icon-paper"></i>
+        <div class="aui-bar-tab-label">顺风餐</div>
+    </a>
+    </div>
+   
+    
+    <div class="aui-bar-tab-item" tapmode>
+    <a href="find.html">
+        <i class="aui-iconfont aui-icon-search"></i>
+        <div class="aui-bar-tab-label">发现</div>
+    </a>
+    </div>
+    
+    
+    <div class="aui-bar-tab-item aui-active" tapmode>
+    <a href="my.html">
+        <i class="aui-iconfont aui-icon-my"></i>
+        <div class="aui-bar-tab-label">我的</div>
+    </a>
+    </div>
+    
+</footer>
+
+</div>
+</body>
+</html>

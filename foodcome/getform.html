@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="aui/css/aui.2.0.css" />
+
+<style type="text/css">
+.aui-content{
+    margin-bottom: 3.25rem;
+}
+.aui-bar-btn-round{
+    border-radius: 1.5rem;
+    background-color: rgb(220,41,34);
+    width: 80%;
+}
+.aui-bar-btn.aui-bar-btn-round .aui-bar-btn-item:first-child{
+    border-radius: 1.5rem;
+}
+.aui-bar-btn.aui-bar-btn-round .aui-bar-btn-item:last-child {
+    border-radius: 1.5rem;
+}
+.aui-bar-nav .aui-bar-btn-item {
+    line-height: 1.3rem;
+    border-color: rgb(220,41,34);
+}
+.aui-bar-nav .aui-bar-btn-item.aui-active {
+    background-color: #ffffff;
+    color: rgb(220,41,34);
+}
+.aui-list .aui-list-item-inner{
+    min-height: 1.2rem;
+    box-sizing: content-box;
+    padding: 0 0.3rem 0 0.3rem;
+}
+.aui-card-list-content-padded{
+    padding: 0 0.75rem;
+}
+.aui-info{
+    padding: 0;
+}
+.aui-info span {
+    font-size:16px;
+}
+.aui-info-ft{
+    margin: 0.5rem 0;
+}
+.aui-info-ft p{
+    font-size: 12px;
+    margin:0.25rem 1.5rem;
+}
+.aui-card-list-footer{
+    padding: 0;
+}
+.aui-bar-nav{
+    background-color: #ffffff;
+    line-height: 1.5rem;
+}
+.aui-bar-nav .aui-btn{
+   border-radius: 
+}
+.btn-around{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 5rem;
+    background-color: #07395f;
+    box-shadow:10px 10px 5px #888888;
+    z-index: 99;
+    position: fixed;
+    bottom: 3.25rem;
+    left: 1.75rem;
+}
+.btn-around p{
+    text-align: center;
+}
+.aui-active .aui-iconfont,.aui-active .aui-bar-tab-label{
+    color: #f54d4c;
+}
+.aui-iconfont,.aui-bar-tab-label{
+    color: #757575;
+}
+</style>
+</head>
+
+<body>
+
+<header class="aui-bar aui-bar-nav" style="background-color:#f54d4c;padding-top:25px;">
+    <a class="aui-pull-left aui-btn">
+        <p style="color:#ffffff;font-size:14px;">楼栋筛选</p>&nbsp;
+        <span class="aui-iconfont aui-icon-down" style="font-size:12px;"></span>
+    </a>
+    <div class="aui-title">
+        <div class="aui-bar aui-bar-btn aui-bar-btn-round">
+            <div class="aui-bar-btn-item aui-active">接单</div>
+            <div class="aui-bar-btn-item">结束</div>
+        </div>
+    </div>
+    <a class="aui-pull-right aui-btn">
+        <div class="aui-badge" style="margin-right:15px;margin-left:0;background-color:#ff6c6c;">1</div>
+        <span class="aui-iconfont aui-icon-share" style="margin-right:10px;"></span>
+    </a>
+</header>
+
+<div class="aui-list">
+    <div class="aui-list-item-inner">
+        <div class="aui-list-item-title">
+            <p style="font-size:12px;">*您每完成一定单量的配送,便能获得相应奖励。</p>
+        </div>
+        <div class="aui-list-item-right">
+            <p style="font-size:12px;color:#f54d4c;">奖励规则<span class="aui-iconfont aui-icon-right" style="font-size:12px;"></span></p>
+        </div>
+    </div>
+</div>
+
+<div class="aui-content">
+    <div class="aui-card-list">
+        <div class="aui-card-list-header aui-card-list-user aui-border-b">
+            <div class="aui-card-list-user-avatar">
+                    <img src="aui/image/demo6.png" class="aui-img-round" />
+            </div>
+            <div class="aui-card-list-user-name">
+                <div><span style="color:#ff6c6c;font-size: 16px;font-weight:bolder;">♀</span>夏小柒</div>
+            </div>
+            <div class="aui-card-list-user-info">16:15</div>
+        </div>
+        <div class="aui-card-list-content-padded">
+            <div class="aui-info aui-margin-t-10 aui-padded-l-10 aui-padded-r-10">
+                <div class="aui-info-item">
+                    <div class="aui-badge" style="position:relative;top:0; left:0;background-color:#999999;"></div>
+                    <span class="aui-margin-l-5">取餐点:水利水电新宇食堂一楼</span>
+                </div>
+            </div>
+            <div class="aui-info aui-margin-t-10 aui-padded-l-10 aui-padded-r-10">
+                <div class="aui-info-item">
+                    <div class="aui-badge" style="position:relative;top:0; left:0;background-color:#999999;"></div>
+                    <span class="aui-margin-l-5" style="font-size:16px;">收货地址:研究生714室</span>
+                </div>
+            </div>
+            <div class="aui-info aui-margin-t-10 aui-padded-l-10 aui-padded-r-10">
+                <div class="aui-info-item">
+                    <div class="aui-badge" style="position:relative;top:0; left:0;background-color:#999999;"></div>
+                    <span class="aui-margin-l-5">送达时间:17:36——18:15</span>
+                </div>
+            </div>
+            <div class="aui-info-ft">
+                <p>奥尔良鸡排套餐 ￥10 x2</p>
+                <p>奥尔良鸡排套餐 ￥10 x2</p>
+            </div>
+        </div>
+        <div class="aui-card-list-footer aui-border-t">
+            <div class="aui-bar aui-bar-nav">
+                <a class="aui-pull-left">
+                    <p style="font-size:0.8rem;">本单收入:<span style="color:#ff6c6c;">2元</span></p>
+                </a>
+                <a href=""  class="aui-pull-right">
+                    <div style="background-color: #f54d4c;border-radius:1.5rem;padding:0 1rem;">
+                    抢单
+                    </div>
+                </a>                    
+            </div>
+        </div>
+    </div>
+
+    <div class="aui-card-list">
+        <div class="aui-card-list-header aui-card-list-user aui-border-b">
+            <div class="aui-card-list-user-avatar">
+                    <img src="aui/image/demo6.png" class="aui-img-round" />
+            </div>
+            <div class="aui-card-list-user-name">
+                <div><span style="color:#ff6c6c;font-size: 16px;font-weight:bolder;">♀</span>夏小柒</div>
+            </div>
+            <div class="aui-card-list-user-info">16:15</div>
+        </div>
+        <div class="aui-card-list-content-padded">
+            <div class="aui-info aui-margin-t-10 aui-padded-l-10 aui-padded-r-10">
+                <div class="aui-info-item">
+                    <div class="aui-badge" style="position:relative;top:0; left:0;background-color:#999999;"></div>
+                    <span class="aui-margin-l-5">取餐点:水利水电新宇食堂一楼</span>
+                </div>
+            </div>
+            <div class="aui-info aui-margin-t-10 aui-padded-l-10 aui-padded-r-10">
+                <div class="aui-info-item">
+                    <div class="aui-badge" style="position:relative;top:0; left:0;background-color:#999999;"></div>
+                    <span class="aui-margin-l-5" style="font-size:16px;">收货地址:研究生714室</span>
+                </div>
+            </div>
+            <div class="aui-info aui-margin-t-10 aui-padded-l-10 aui-padded-r-10">
+                <div class="aui-info-item">
+                    <div class="aui-badge" style="position:relative;top:0; left:0;background-color:#999999;"></div>
+                    <span class="aui-margin-l-5">送达时间:17:36——18:15</span>
+                </div>
+            </div>
+            <div class="aui-info-ft">
+                <p>奥尔良鸡排套餐 ￥10 x2</p>
+                <p>奥尔良鸡排套餐 ￥10 x2</p>
+            </div>
+        </div>
+        <div class="aui-card-list-footer aui-border-t">
+            <div class="aui-bar aui-bar-nav">
+                <a class="aui-pull-left">
+                    <p style="font-size:0.8rem;">本单收入:<span style="color:#ff6c6c;">2元</span></p>
+                </a>
+                <a href=""  class="aui-pull-right">
+                    <div style="background-color: #f54d4c;border-radius:1.5rem;padding:0 1rem;">
+                    抢单
+                    </div>
+                </a>                    
+            </div>
+        </div>
+    </div>
+</div>
+
+<a href="">
+    <div class="btn-around">
+        <p style="color:rgb(71,198,207);font-size:16px;font-weight:400; margin-top:10%;">2单</p>
+        <p style="color:rgb(160,168,181);font-size:12px;">进行中</p>        
+    </div>
+</a>
+
+<footer class="aui-bar aui-bar-tab" id="footer">
+    
+        <div class="aui-bar-tab-item" tapmode>
+        <a href="index.html">
+            <i class="aui-iconfont aui-icon-cart"></i>
+            <div class="aui-bar-tab-label">外卖</div>
+        </a>
+        </div>
+  
+    
+    <div class="aui-bar-tab-item  aui-active" tapmode>
+    <a href="getform.html">
+        <i class="aui-iconfont aui-icon-paper"></i>
+        <div class="aui-bar-tab-label">顺风餐</div>
+    </a>
+    </div>
+   
+    
+    <div class="aui-bar-tab-item" tapmode>
+    <a href="find.html">
+        <i class="aui-iconfont aui-icon-search"></i>
+        <div class="aui-bar-tab-label">发现</div>
+    </a>
+    </div>
+    
+    
+    <div class="aui-bar-tab-item" tapmode>
+    <a href="my.html">
+        <i class="aui-iconfont aui-icon-my"></i>
+        <div class="aui-bar-tab-label">我的</div>
+    </a>
+    </div>
+    
+</footer>
+
+
+
+</body>
+</html>
